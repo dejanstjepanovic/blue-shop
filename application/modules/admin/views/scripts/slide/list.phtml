@@ -1,0 +1,21 @@
+<h3 class="content-title"><?php echo $this->title; ?></h3>
+<?php echo $this->flashMessenger(); ?>
+
+<div id="bs-grid">
+<div class="pagination">
+<?php if (count($this->paginator)) : 
+  echo $this->paginationControl($this->paginator, 'Sliding', '_paginationControl.phtml');
+endif; ?>
+</div>
+<table class="bs-grid-table">
+	<tr>
+		<th colspan="2"><?php echo $this->translate('order')?></th>
+		<th><?php echo $this->translate('start')?></th>
+		<th><?php echo $this->translate('end')?></th>
+		<th><?php echo $this->translate('slide_group')?></th>
+	</tr>
+<?php if (count($this->paginator)) : 
+  echo $this->partialLoop('_partials/_slide-list.phtml', $this->paginator);
+endif; ?>
+</table>
+</div>

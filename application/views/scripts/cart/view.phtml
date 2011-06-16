@@ -1,0 +1,47 @@
+			<div class="box10">
+				<div class="top">:: <?php echo $this->translate('cart')?> </div>
+				<div class="cont cartView">
+				<form action="<?php echo $this->url()?>" method="post">
+<table border="0" width="100%" cellpadding="0px" cellspacing="0px">
+	<tr>
+		<th><?php echo $this->translate('image')?></th>
+		<th><?php echo $this->translate('name')?></th>
+		<th><?php echo $this->translate('price')?></th>
+		<th><?php echo $this->translate('quantity')?></th>
+		<th><?php echo $this->translate('total')?></th>
+		<th><?php echo $this->translate('remove')?></th>
+	</tr>
+<?php if ($this->cart) : ?>
+
+<?php foreach ($this->cart AS $item) : ?>
+	<tr>
+		<td><a href="/product/<?php echo $item['p_id'];?>">
+<?php echo (($arr = explode(';', $item['p_img'])) != array('')) ? '<img src="/media/images/' . $arr[0] . '" width="100px" height="60px" border="0" />' : '';?></a></td>
+		<td><a href="/product/view/id/<?php echo $item['p_id'];?>"><?php echo $item['p_name'] ?></a></td>
+		<td><?php echo $this->price($item['p_price']) ?></td>
+		<td><input style="width: 50px" type="text" name="amount[<?php echo $item['p_id']?>]" value="<?php echo $item['amount']?>" /></td>
+		<td><?php echo $this->price($item['p_price'] * $item['amount']) ?></td>
+		<td><input type="checkbox" name="remove[<?php echo $item['p_id']?>]" /></td>
+	</tr>
+<?php endforeach; ?>
+
+<?php else : ?>
+	<tr>
+		<td colspan="6"><?php echo $this->translate('empty')?></td>
+	</tr>
+<?php endif; ?>
+
+	<tr>
+		<td><?php echo $this->translate('total_cost');?>:</td>
+		<td colspan="5" style="text-align:right"><?php echo $this->price($this->totalCost); ?></td>
+	</tr>
+	<tr>
+		<td colspan="6" style="text-align:right"><input type="submit" value="<?php echo $this->translate('update')?>" class="ws-p-button" /></td>
+	</tr>
+
+</table>
+</form>
+<br />
+<a href="<?php echo $this->ref?>"><?php echo $this->translate('continue_shopping');?></a>
+				</div>
+			</div>

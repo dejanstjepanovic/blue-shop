@@ -1,0 +1,131 @@
+﻿?# Deutsch
+account_suspended;Benutzerkonto_gelöscht
+add;hinzufügen
+add_admin_news;Admin Nachricht hinzufügen
+add_category;Kategorie hinzufügen
+add_category_ok;Kategorie hinzufügen Ok
+add_client;Klient hinzufügen
+add_client_ok;Klient hinzufügen Ok
+add_client_news;Klient Nachricht hinzufügen
+add_language;Sprache hinzufügen
+add_language_ok;Sprache hinzufügen Ok
+add_news;Nachricht hinzufügen
+add_user;Benutzer hinzufügen
+address_verified;Adresse verifiziert
+
+cancel;Abbrechen
+category;Kategorie
+category_description;Kategorie_Beschreibung
+category_name;Kategorie_Name
+change_language;Kategorie_Sprache
+change_password;Passwort ändern
+client;Klient
+client_name;Klient_Name
+client_news;Klient_Nachricht
+confirm_new_password;Neues Passwort bestätigen
+current_password;aktuelles_Passwort
+
+delete;Löschen
+delete_category_ok;Kategorie_löschen_Ok
+delete_client_ok;Klient_löschen_Ok
+delete_client_news;Klienten_Nachricht_löschen
+delete_news;Nachricht_löschen
+delete_language_ok;Sprache_löschen_Ok
+delete_list_item_message;Listennachricht_löschen
+derived;abgeleitet
+derived_client_news;abgeleitete_Klienten_Nachricht
+
+edit;Bearbeiten
+editable;bearbeitbar
+edit_category;Kategorie_bearbeiten
+edit_category_ok;Kategorie_bearbeiten_Ok
+edit_client;Klient_bearbeiten
+edit_client_news;Kleinten_Nachricht_bearbeiten
+edit_client_ok;Klient_bearbeiten_Ok
+edit_derived_client_news;Abgeleitete_Klienten_Nachricht_bearbeiten
+edit_language;Sprache_bearbeiten
+edit_user;Benutzer_bearbeiten
+end;Ende
+email;E-Mail
+email_address;E-Mail Adresse
+error;Fehler
+error_add_category;Fehler_Kategorie_hinzufügen
+error_add_client;Fehler_Klient_hinzufügen
+error_confirmation_password;Fehler_Passwort_Bestätigung
+error_current_password;Fehler_aktuelles_Passwort
+error_edit_category;Fehler_Kategorie_bearbeiten
+error_edit_client;Fehler_Klient_bearbeiten
+error_invalid_id;Fehler_ungültige_ID
+error_language_add;Fehler_Sprache_hinzufügen
+error_login_combination;Fehler_Login
+error_nothing_selected;Fehler_keine_Auswahl_getroffen
+error_user_add;Fehler_Benutzer_hinzufügen
+error_user_edit;Fehler_Benutzer_bearbeiten
+error_user_verification;Fehler_Benutzer_Verifizierung
+error_valid_email;Fehler_gültige_E-Mail
+error_valid_password;Fehler_gültiges_Passwort
+error_wrong_parameters;Fehler_falsche_Parameter
+
+forgot_password;Passwort_vergessen
+flag;Flagge
+from_pool;aus_Pool
+from_pool_no_edit_client_news;aus_Pool_keine_Klienten_Nachricht_Bearbeitung
+
+get;Holen
+
+index_category;Index_Kategorie
+index_client;Index_Klient
+index_client_news;Index_Kleinten_Nachricht
+index_language;Index_Sprache
+index_user;Index_Benutzer
+in_pool;In_Pool
+ip_address;IP-Adresse
+
+language;Sprache
+last_visit;Letzter_Besuch
+list_admin_news;Liste_Admin_Nachrichten
+list_categories;Liste_Kategorien
+list_category;Liste_Kategorien
+list_client;Liste_Klient
+list_languages;Liste_Sprachen
+list_users;Liste_Benutzer
+login;Login
+logout;Logout
+
+name;Name
+news_list;Nachrichtenliste
+new_password;Neues Passwort
+not_in_pool;Nicht im Pool
+
+password;Passwort
+password_changed;Passwort geändert
+pool;Pool
+public;Öffentlich
+
+reset_password;Passwort zurücksetzen
+role;Rolle
+
+save;Speichern
+send;Absenden
+select_client_news;Klienten Nachricht auswählen
+select_news;Nachricht auswählen
+short_text;Beschreibung
+sign_in;Anmelden
+status;Status
+start;Start
+suported_languages;Unterstützte_Sprachen
+
+text;Text
+title;Titel
+translate_client_news;Klientennachricht_übersetzen
+
+user;Benutzer
+user_add_ok;Benutzer_hinzufügen_Ok
+user_delete_ok;Benutzer_löschen_Ok
+user_edit_ok;Benutzer_bearbeiten_Ok
+user_login;Benutzer_Login
+username;Benutzername
+
+verification_sent;Verifizierung_abgesendet
+
+welcome;Willkommen

@@ -1,0 +1,87 @@
+/**
+ * @author Dejan Stjepanovic <stj.dejan@gmail.com>
+ */
+@CHARSET "UTF-8";
+
+/* mb-slider
+------------------------------------------------------------------------------------------------------------*/
+.slide-wrapper {
+	position: relative;
+}
+.slide-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.slide-img, .slide-img-wrap {
+	z-index: 200;
+}
+.slide-desc, .slide-desc-wrap {
+	z-index: 205;
+}
+
+/* head-lines
+------------------------------------------------------------------------------------------------------------*/
+#slide-5 {
+	height: 15px;
+	overflow: hidden;
+}
+
+/* top-slide
+------------------------------------------------------------------------------------------------------------*/
+#top-slide-outer-wrapper {
+	margin-top: 5px;
+	background-image: url(/static/img/top_slide_border.png);
+	background-repeat: no-repeat;
+}
+#top-slide-inner-wrapper {
+	padding: 10px 15px;
+	background-image: url(/static/img/top_slide_border.png);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+#slide-6 {
+	width: 520px;
+	height: 120px;
+	overflow: hidden;
+	color: #C5E1FF;
+	text-shadow: 1px 1px 0 #2D4158;
+	line-height: 17px;
+	text-align: justify;
+}
+#slide-6 a {
+	color: #C5E1FF;
+	text-decoration: underline;
+}
+#slide-6 strong {
+	font-size: 16px;
+}
+
+/* main-slide
+------------------------------------------------------------------------------------------------------------*/
+#main-slide-outer-wrapper {
+	padding-top: 2px;
+	background-color: #A4C7E1;
+	background-image: url(/static/img/big_slide_bg.png);
+	background-repeat: repeat-x;
+	border-bottom: 2px solid #85A5CB;
+}
+#slide-7 {
+	width: 960px;
+	height: 350px;
+	overflow: hidden;
+}
+#slide-7 .slide-desc-wrap {
+	width: 370px;
+	height: 330px;
+	padding: 10px;
+	color: #C3CFD4;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 22px;
+	text-shadow: 1px 1px 0px black;
+	background-image: url(/static/img/ss_cont_bg.png);
+}
+#slide-7 .slide-desc {
+	padding: 15px;
+}

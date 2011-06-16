@@ -1,0 +1,44 @@
+<?php echo $this->doctype(); ?>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<?php echo $this->headMeta(); ?>
+
+<link href="/static/css/reset.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" />
+<link href="/static/css/text.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" />
+<link href="/static/css/fluid_grid_12.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" />
+<link href="/static/css/admin_style.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" />
+<link href="/static/jquery-ui/css/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" />
+<script src="/static/js/jquery/jquery.min.js" type="text/javascript"></script>
+<script src="/static/jquery-ui/js/jquery-ui.min.js" type="text/javascript"></script>
+<script src="/static/js/bs.js" type="text/javascript"></script>
+<?php echo $this->headTitle(); ?>
+<script type="text/javascript">
+$(document).ready(function() {
+	updateContentHeight();
+});
+</script>
+</head>
+<body>
+
+<div id="wrapper" class="container_12">
+	<div id="header" class="grid_12">
+		<div class="logo-top">BlueShop</div>
+	</div>
+	<div id="main-nav" class="grid_12">
+		<?php echo $this->navigation()->menu()->render();?>
+	</div>
+	<div class="grid_12">
+		<div id="content">
+			<?php echo $this->layout()->content; ?>
+			<div class="clear">&nbsp;</div>
+		</div>
+	</div>
+	<div id="footer" class="grid_12">
+		Copyright © 2011 Dejan Stjepanovic
+	</div>
+	<div class="clear">&nbsp;</div>
+</div>
+
+</body>
+</html>

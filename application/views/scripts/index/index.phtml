@@ -1,0 +1,6 @@
+<div class="box10"> 
+	<div class="top">:: <?php echo $this->translate('featured');?> </div> 
+	<div class="cont featured">
+<?php if (count($this->featured)) echo $this->partialLoop('_partials/_featured-list.phtml', $this->featured); ?>
+	</div>
+</div>

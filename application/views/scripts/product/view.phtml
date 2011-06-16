@@ -1,0 +1,75 @@
+<div class="box10">
+	<div class="top">:: <?php echo $this->product['p_name']; ?> </div>
+	<div class="cont product">
+	
+		<div class="itemBig" id="/product/<?php echo $this->product['p_id'] . '-' . $this->product['p_alias'];?>.html">
+						
+			<table width="100%" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+			<td>
+				<div class="photo"><a href="#">
+					<?php echo (($arr = explode(';', $this->product['p_images'])) != array('')) ? '<img src="/media/images/' . $arr[0] . '" />' : '';?>
+				</a></div>
+				<div class="photoList">
+				<?php if (!empty($arr[0])) : ?>
+					<?php foreach ($arr as $value) : ?>
+					<img src="/media/images/<?php echo $value;?>" />
+					<?php endforeach; ?>
+					<div class="clear"></div>
+				<?php endif; ?>
+				</div>
+			</td>
+			<td>
+				<div class="name"><a href="#"><?php echo $this->product['p_name']; ?><br /><span><?php echo $this->product['man_name']; ?></span></a></div>
+				<div class="price"><?php echo $this->price($this->product['p_price']); ?></div>
+				<div class="descShort"><?php echo $this->product['p_description']; ?></div>
+				<div class="add"><a class="cartAdd" href="/cart/add/id/<?php echo $this->product['p_id'];?>"><?php echo $this->translate('add_to_cart'); ?><span></span></a></div>
+			</td>
+			</tr>
+			</table>
+			
+			<div class="descFull">
+				<div class="top2"><?php echo $this->translate('description');?></div>
+				<div class="cont"><?php echo $this->product['p_spec']; ?></div>
+			</div>
+			
+			<div id="addComment">
+					<div class="top2"><?php echo $this->translate('add_review')?></div>
+					<div class="cont"><?php echo ($this->form) ? $this->form : '<a href="/auth/login">' . $this->translate('please_login') . '</a>'; ?></div>
+			</div>
+			
+			<div id="comments">
+				<div class="top2"><?php echo $this->translate('customer_reviews')?></div>
+				<div class="cont">
+				
+				<?php if (count($this->commPaginator)) : ?>
+				
+				<?php foreach ($this->commPaginator as $value) : ?>
+					<div class="comment">
+						<div class="info"><table border="0" cellspacing="0" cellpadding="0" width="100%"><tr>
+							<td style="text-align:left"><?php echo($value['user_id']) ? $this->escape($value['username']) : $this->escape($value['name']) ?></td>
+							<td style="text-align:right"><?php echo $value['created'] ?></td>
+						</tr></table></div>
+						<div class="subject"><?php echo $this->escape($value['subject']) ?></div>
+						<div class="msg"><?php echo $this->escape($value['message']) ?></div>
+						<div class="vote">
+							<span class="voteResult">(<?php echo $this->escape($value['vote_up'] - $value['vote_down']) ?>)</span>
+							<a href="/comment/vote/up/<?php echo $value['id'] ?>/pid/<?php echo $this->product['p_id']; ?>"><span class="voteUp"></span></a>
+							<a href="/comment/vote/down/<?php echo $value['id'] ?>/pid/<?php echo $this->product['p_id']; ?>"><span class="voteDown"></span></a>
+						</div>
+					</div>
+				<?php endforeach; ?>
+				
+				<?php echo $this->paginationControl($this->commPaginator, 'Sliding', '_paginationControl.phtml'); ?>
+				
+				<?php else : ?>
+					<?php echo $this->translate('no_comments');?>
+				<?php endif; ?>
+				
+				</div>
+			</div><!-- #comments -->
+				
+		</div>
+	
+	</div>
+</div>

@@ -1,0 +1,18 @@
+<h3 class="content-title"><?php echo $this->title; ?></h3>
+<?php echo $this->flashMessenger(); ?>
+
+<div id="bs-grid">
+<table class="bs-grid-table">
+	<tr>
+		<th colspan="2"><?php echo $this->translate('name')?></th>
+		<th><?php echo $this->translate('animTypeI')?></th>
+		<th><?php echo $this->translate('animTypeD')?></th>
+		<th><?php echo $this->translate('animDur')?></th>
+		<th><?php echo $this->translate('animPause')?></th>
+		<th><?php echo $this->translate('enabled')?></th>
+	</tr>
+<?php if (count($this->slideGropus)) : 
+  echo $this->partialLoop('_partials/_slide-groups-list.phtml', $this->slideGropus);
+endif; ?>
+</table>
+</div>

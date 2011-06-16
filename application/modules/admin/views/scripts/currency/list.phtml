@@ -1,0 +1,15 @@
+<h3 class="content-title"><?php echo $this->title; ?></h3>
+<?php echo $this->flashMessenger(); ?>
+
+<div id="bs-grid">
+<table class="bs-grid-table">
+	<tr>
+		<th colspan="2"><?php echo $this->translate('name')?></th>
+		<th><?php echo $this->translate('short_name')?></th>
+		<th><?php echo $this->translate('rate')?></th>
+	</tr>
+<?php if (count($this->currencies)) : 
+  echo $this->partialLoop('_partials/_currencies-list.phtml', $this->currencies);
+endif; ?>
+</table>
+</div>

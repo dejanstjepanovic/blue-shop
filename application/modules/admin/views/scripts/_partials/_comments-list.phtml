@@ -1,0 +1,17 @@
+<tr>
+	<td><?php echo $this->subject; ?></td>
+	<td class="link-v2 w15">
+		<a class="bs-link-v2 edit" href="/admin/comment/edit/id/<?php echo $this->id; ?>"><?php echo $this->translate('edit')?></a>
+		<a class="bs-link-v2 delete" href="/admin/comment/delete/id/<?php echo $this->id; ?>"><?php echo $this->translate('delete')?></a>
+	</td>
+	<td><?php echo $this->username; ?></td>
+	<td><?php echo $this->name; ?></td>
+	<td><?php echo $this->mail; ?></td>
+	<td><?php echo $this->site; ?></td>
+	<td><?php echo $this->ip; ?></td>
+	<td><?php echo $this->vote_up; ?></td>
+	<td><?php echo $this->vote_down; ?></td>
+	<td><?php echo $this->created; ?></td>
+	<td><?php echo $this->publish; ?></td>
+</tr>
+<tr><td colspan="11" style="padding:0px;"><div class="border-dotted"></div></td></tr>

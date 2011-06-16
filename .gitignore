@@ -1,0 +1,7 @@
+.settings
+.buildpath
+.project
+.zfproject.xml
+logs
+application/configs/app_config.ini
+application/configs/application.ini

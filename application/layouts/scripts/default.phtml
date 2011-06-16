@@ -1,0 +1,149 @@
+<?php echo $this->doctype(); ?>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<?php echo $this->headMeta(); ?>
+
+<link href="/static/css/reset.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" />
+<link href="/static/css/text.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" />
+<link href="/static/css/grid_24.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" />
+<link href="/static/css/public_style.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" />
+<link href="/static/css/mbslider.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" />
+<link href="/static/jquery-ui/css/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" />
+
+<script src="/static/js/jquery/jquery.min.js" type="text/javascript"></script>
+<script src="/static/jquery-ui/js/jquery-ui.min.js" type="text/javascript"></script>
+<script src="/static/js/jquery.mbslider.js" type="text/javascript"></script>
+<script src="/static/js/bs.js" type="text/javascript"></script>
+<?php echo $this->headTitle(); ?>
+
+</head>
+<body>
+
+<div id="header-wrapper">
+	<div id="header-inner">
+		<div class="container_24">
+			<div class="grid_14">
+				<div id="headLines"><?php echo $this->slider(5);?></div>
+				<div class="clear">&nbsp;</div>
+			</div>
+			<div class="grid_10">
+				<div id="cart-top">
+					<a href="/cart/view"><?php echo Model_Cart::getTotalItems()?> <?php echo $this->translate('products_in_cart');?></a>&nbsp&nbsp| 
+					<a href="/cart/view"><?php echo $this->translate('total_cost');?>: <?php echo $this->price(Model_Cart::getTotalCost())?></a>
+				</div>
+			</div>
+			<div class="clear">&nbsp;</div>
+		</div>
+	</div>
+	
+	<div id="header-content">
+		<div class="container_24">
+			<div id="logo-top" class="grid_10">
+				<a href="/"><span></span></a>
+			</div>
+			<div class="grid_14">
+				<?php echo $this->slider(6)?>
+			</div>
+			<div class="clear">&nbsp;</div>
+		</div>
+	</div>
+	
+	<div id="header-nav">
+		<div class="container_24">
+			<div id="main-navigation" class="grid_24">
+				<?php echo $this->navigation()->menu()->render();?>
+				<?php echo $this->formCurrency?>
+			</div>
+			<div class="clear">&nbsp;</div>
+		</div>
+	</div>
+</div>
+
+<div id="main-slide-outer-wrapper">
+	<div class="container_24">
+		<div class="grid_24">
+			<?php echo $this->slider(7)?>
+		</div>
+		<div class="clear">&nbsp;</div>
+	</div>
+</div>
+<div class="container_24">
+<?php echo $this->flashMessenger(); ?>
+</div>
+<div id="content-wrapper">
+	<div id="content-container" class="container_24">
+		<div id="content-left" class="grid_6">
+<div class="box10"> 
+<div class="top">:: <?php echo $this->translate('categories');?></div> 
+<div class="cont left-nav"> 
+<ul>
+<li><a href="/category/1-demo-category.html">Demo category</a></li>
+<li><a href="/category/2-demo-category-2.html">Demo category 2</a></li>
+<li><a href="#">Lorem ipsum</a></li>
+<li><a href="#">Dolor sit amet</a></li>
+<li><a href="#">Consectetur adipisicing elit</a></li> 
+<li><a href="#">Sed do eiusmod</a></li> 
+<li><a href="#">Lorem ipsum</a></li> 
+<li><a href="#">Dolor sit amet</a></li> 
+<li><a href="#">Consectetur adipisicing elit</a></li> 
+<li><a href="#">Sed do eiusmod</a></li> 
+<li><a href="#">Lorem ipsum</a></li> 
+<li><a href="#">Dolor sit amet</a></li> 
+<li><a href="#">Consectetur adipisicing elit</a></li> 
+<li><a href="#">Sed do eiusmod</a></li> 
+<li><a href="#">Lorem ipsum</a></li> 
+</ul>
+</div> 
+</div>
+<div class="box10"> 
+<div class="top">:: <?php echo $this->translate('cart');?></div> 
+<div class="cont cart"> 
+<div class="products"><strong><?php echo Model_Cart::getTotalItems()?></strong> <?php echo $this->translate('products_in_cart');?></div> 
+<div class="total"><?php echo $this->translate('total_cost');?>: <strong><?php echo $this->price(Model_Cart::getTotalCost())?></strong></div> 
+<a href="/cart/view"><?php echo $this->translate('view_cart');?></a> 
+</div> 
+</div>
+		</div>
+		<div id="content-right" class="grid_18">
+			<?php echo $this->layout()->content; ?>
+		</div>
+		<div class="clear">&nbsp;</div>
+	</div>
+</div>
+
+<div id="bottom-cont-wrapper">
+	<div id="bottom-cont-container" class="container_24">
+		<div class="box55">
+			<div id="bottom-cont-1" class="grid_6">
+				<div class="top">Lorem ipsum</div>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident..
+			</div>
+			<div id="bottom-cont-2" class="grid_6">
+				<div class="top">Lorem ipsum</div>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident..
+			</div>
+			<div id="bottom-cont-3" class="grid_6">
+				<div class="top">Lorem ipsum</div>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident..
+			</div>
+			<div id="bottom-cont-4" class="grid_6">
+				<div class="top">Lorem ipsum</div>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident..
+			</div>
+			<div class="clear">&nbsp;</div>
+		</div>
+	</div>
+</div>
+
+<div id="footer-wrapper">
+	<div id="footer-container" class="container_24">
+		<div id="footer" class="grid_24">
+			Copyright © 2011 Dejan Stjepanovic
+		</div>
+		<div class="clear">&nbsp;</div>
+	</div>
+</div>
+
+</body>
+</html>

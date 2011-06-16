@@ -1,0 +1,154 @@
+?# English;
+home;Home
+public;Public
+admin;Admin
+invalid_input;Invalid input
+login;Login
+logout;Logout
+register;Register
+search;Search
+contact;Contact
+about_us;About us
+username;Username
+name;Name
+password;Password
+login_successful;Login Successful
+product;Product
+products;Products
+products_list;List products
+product_add;Add product
+product_featured_list;List featured
+product_edit;Edit product
+product_delete;Delete product
+featured;Featured
+featured_add;Add featured
+featured_edit;Edit featured
+featured_delete;Delete featured
+featured_list;List featured
+delete_featured_confirm_msg;This action cannot be undone!
+product_does_not_exist;Product does not exist
+start;Start
+expiration;Expiration
+delete_product_confirm_msg;This action cannot be undone!
+categorie;Categorie
+categories;Categories
+category_add;Add category
+categories_list;List categories
+category_edit;Edit category
+category_delete;Delete category
+delete_category_confirm_msg;If you delete category, all products related to this category will be deleted. This action cannot be undone!
+section;Section
+sections;Sections
+section_add;Add section
+sections_list;List sections
+section_edit;Edit section
+section_delete;Delete section
+delete_section_confirm_msg;If you delete section, all products and categories related to this section will be deleted. This action cannot be undone!
+manufacturer;Manufacturer
+manufacturers;Manufacturers
+manufacturer_add;Add manufacturer
+manufacturers_list;List manufacturers
+manufacturer_edit;Edit manufacturer
+manufacturer_delete;Delete manufacturer
+delete_manufacturer_confirm_msg;If you delete manufacturer, all products related to this manufacturer will be deleted. This action cannot be undone!
+name;Name
+price;Price
+stock;Stock
+code;Code
+description;Description
+specification;Specification
+tags;Tags
+image;Image
+images;Images
+publish;Publish
+add;Add
+manufacturer;Manufacturer
+already_in_use;Already in use
+id;ID
+edit;Edit
+delete;Delete
+first;First
+previous;Previous
+next;Next
+last;Last
+yes;Yes
+no;No
+success;Success
+error;Error
+are_you_sure;Are you sure?
+add_to_cart;Add to cart
+submit;Submit
+please_login;Please login
+add_review;Add review
+subject;Subject
+message;Message
+mail;Mail
+site;Site
+Please verify you're a human:;Please verify you're a human:
+customer_reviews;Customer reviews
+products_in_cart;Product(s) in cart
+total_cost;Total cost
+total;Total
+view_cart;View cart
+cart;Cart
+details;Details
+no_comments;No comments
+continue_shopping;Continue shopping
+quantity;Quantity
+remove;Remove
+update;Update
+empty;Empty
+currency;Currency
+currency_add;Add currency
+currency_list;List currency
+currency_edit;Edit currency
+currency_delete;Delete currency
+currencies;Currencies
+change;Change
+currencies_list;Currencies list
+update_rates;Update rates
+short_name;Short name
+rate;Rate
+slides;Slides
+slide_add;Add slide
+slide_list;List slides
+slide_edit;Edit slide
+slide_delete;Delete slide
+content;Content
+end;End
+order;Order
+slide_groups;Slide groups
+slide_group_add;Add slide group
+slide_groups_list;List slide groups
+slide_group_edit;Edit slide group
+delete_slide_group_confirm_msg;If you delete slide group, all slides related to this slide group will be deleted. This action cannot be undone!
+method;Method
+contentMethod;Content method
+imagesMethod;Images method
+sleepDur;Sleep duration
+animDur;Animation duration
+startFrom;Start from
+getAndStop;Get and stop
+autoStart;Auto start
+enabled;Enabled
+comments;Comments
+comments_list;List comments
+comment_edit;Edit comment
+comment_delete;Delete comment
+already_voted;You have already voted
+You don't have permission to access this page;You don't have permission to access this page
+email;Email
+password_confirm;Password confirm
+welcome;Welcome
+address_verification_subject;Mail address verification
+password_reset_subject;Password Reset
+registration_successful;Registration successful
+reset_password;Reset password
+reset;Reset
+animPause;Pause
+animDur;Duration
+animTypeI;Images animation
+animTypeD;Text animation
+enable;Enable
+scroll;Scroll
+fade;Fade

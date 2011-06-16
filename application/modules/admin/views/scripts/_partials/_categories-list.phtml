@@ -1,0 +1,14 @@
+<tr>
+	<td><?php echo $this->cat_id; ?>.</td>
+	<td><?php echo $this->cat_name; ?></td>
+	<td class="link-v2 w15">
+		<a class="bs-link-v2 edit" href="/admin/category/edit/id/<?php echo $this->cat_id; ?>"><?php echo $this->translate('edit')?></a>
+		<a class="bs-link-v2 delete" href="/admin/category/delete/id/<?php echo $this->cat_id; ?>"><?php echo $this->translate('delete')?></a>
+	</td>
+	<td><?php echo $this->cat_code; ?></td>
+	<td><?php echo $this->shortText($this->cat_description); ?></td>
+	<td><?php echo $this->cat_tags; ?></td>
+	<td><?php echo $this->translate($this->cat_publish); ?></td>
+	<td><?php echo $this->sec_name; ?></td>
+</tr>
+<tr><td colspan="9" style="padding:0px;"><div class="border-dotted"></div></td></tr>

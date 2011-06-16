@@ -1,0 +1,12 @@
+<tr>
+	<td><?php echo $this->name; ?></td>
+	<td class="link-v2 w10">
+		<a class="bs-link-v2 edit" href="/admin/slide-group/edit/id/<?php echo $this->id; ?>"><?php echo $this->translate('edit')?></a>
+	</td>
+	<td><?php if ($this->animTypeI == 'h') echo $this->translate('scroll'); elseif ($this->animTypeI == 'f') echo $this->translate('fade'); ?></td>
+	<td><?php if ($this->animTypeD == 'h') echo $this->translate('scroll'); elseif ($this->animTypeD == 'f') echo $this->translate('fade'); ?></td>
+	<td><?php echo $this->animDur; ?></td>
+	<td><?php echo $this->animPause; ?></td>
+	<td><?php echo ($this->enabled) ? $this->translate('yes') : $this->translate('no'); ?></td>
+</tr>
+<tr><td colspan="14" style="padding:0px;"><div class="border-dotted"></div></td></tr>

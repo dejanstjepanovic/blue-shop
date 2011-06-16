@@ -1,0 +1,5 @@
+
+Create db and import dump.sql
+
+Remove underscore from names of .ini files in application/configs and change 
+parametars for db and smtp

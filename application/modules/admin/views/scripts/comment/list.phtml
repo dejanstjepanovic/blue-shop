@@ -1,0 +1,27 @@
+<h3 class="content-title"><?php echo $this->title; ?></h3>
+<?php echo $this->flashMessenger(); ?>
+
+<div id="bs-grid">
+<div class="pagination">
+<?php if (count($this->paginator)) : 
+  echo $this->paginationControl($this->paginator, 'Sliding', '_paginationControl.phtml');
+endif; ?>
+</div>
+<table class="bs-grid-table">
+	<tr>
+		<th colspan="2"><?php echo $this->translate('subject')?></th>
+		<th><?php echo $this->translate('username')?></th>
+		<th><?php echo $this->translate('name')?></th>
+		<th><?php echo $this->translate('mail')?></th>
+		<th><?php echo $this->translate('site')?></th>
+		<th><?php echo $this->translate('ip')?></th>
+		<th><?php echo $this->translate('vote_up')?></th>
+		<th><?php echo $this->translate('vote_down')?></th>
+		<th><?php echo $this->translate('created')?></th>
+		<th><?php echo $this->translate('publish')?></th>
+	</tr>
+<?php if (count($this->paginator)) : 
+  echo $this->partialLoop('_partials/_comments-list.phtml', $this->paginator);
+endif; ?>
+</table>
+</div>

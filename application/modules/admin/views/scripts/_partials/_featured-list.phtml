@@ -1,0 +1,20 @@
+<tr>
+	<td class="image"><img src="/media/images/<?php echo (($arr = explode(';', $this->p_images)) != array('')) ? $arr[0] : 'default.jpg';?>" /></td>
+	<td><?php echo $this->p_name; ?></td>
+	<td class="link-v2 w15">
+		<a class="bs-link-v2 edit" href="/admin/featured/edit/id/<?php echo $this->f_id; ?>"><?php echo $this->translate('edit')?></a>
+		<a class="bs-link-v2 delete" href="/admin/featured/delete/id/<?php echo $this->f_id; ?>"><?php echo $this->translate('delete')?></a>
+	</td>
+	<td><?php echo $this->p_price; ?></td>
+	<!-- <td><?php //echo $this->shortText($this->p_description); ?></td> -->
+	<td><?php echo $this->p_tags; ?></td>
+	<td><?php echo $this->translate($this->p_publish); ?></td>
+	<td><?php echo $this->p_code; ?></td>
+	<td><?php echo $this->p_stock; ?></td>
+	<td><?php echo $this->cat_name; ?></td>
+	<td><?php echo $this->sec_name; ?></td>
+	<td><?php echo $this->man_name; ?></td>
+	<td><?php echo $this->start; ?></td>
+	<td><?php echo $this->expiration; ?></td>
+</tr>
+<tr><td colspan="14" style="padding:0px;"><div class="border-dotted"></div></td></tr>

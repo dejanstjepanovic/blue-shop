@@ -1,0 +1,35 @@
+?# Srpski
+welcome;Dobro došli
+error;Greška
+save;Sačuvaj
+send;Posalji
+cancel;Odustani
+reset_password;Nova lozinka
+change_language;Promeni jezik
+
+error_login_combination;Kombinacija e-mail/lozinka nije ispravna. Molim Vas pokusajte ponovo
+
+
+add_client;Dodaj klijenta
+add_user;Dodaj korisnika
+add_category;Dodaj kategoriju
+
+category;Kategorija
+list_categories;Lista kategorija
+client;Klient
+client_name;Ime klienta
+ip_address;IP adresa
+
+list_clients;Lista klijenata
+user;Korisnik
+list_users;Lista korisnika
+language;Jezik
+add_language;Dodaj jezik
+list_languages;Lista jezika
+pool;Bazen
+not_in_pool;Van bazena
+client_news;Klientove vesti
+news_list;Lista vesti
+from_pool;Iz bazena
+derived;Izmenjene vesti
+add_news;Dodaj vest

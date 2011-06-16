@@ -1,0 +1,16 @@
+<div class="item"> 
+	<div class="photo">
+		<a href="/product/view/id/<?php echo $this->p_id;?>-<?php echo $this->p_alias;?>.html">
+			<img src="/media/images/<?php echo (($arr = explode(';', $this->p_images)) != array('')) ? $arr[0] : 'default.jpg';?>" />
+		</a>
+	</div> 
+	<div class="name"><a href="/product/view/id/<?php echo $this->p_id;?>-<?php echo $this->p_alias;?>.html"><?php echo $this->p_name;?></a></div> 
+	<div class="desc"><p>
+		<?php echo $this->shortText($this->p_description, 110); ?>
+	</div> 
+	<div class="price"><strong><?php echo $this->price($this->p_price);?></strong></div> 
+	<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr> 
+		<td class="info"><a href="/product/view/id/<?php echo $this->p_id;?>-<?php echo $this->p_alias;?>.html"><span></span><?php echo $this->translate('details');?></a></td> 
+		<td class="add"><a href="/cart/add/id/<?php echo $this->p_id;?>"><?php echo $this->translate('add_to_cart');?><span></span></a></td> 
+	</tr></table> 
+</div> 

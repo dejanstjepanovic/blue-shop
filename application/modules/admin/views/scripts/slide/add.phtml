@@ -1,0 +1,38 @@
+<h3 class="content-title"><?php echo $this->title; ?></h3>
+<p><b>NOTE:</b><br />
+1. For headlines, please enter plain text (use 'source' tab on editor)<br />
+2. For top slide, images will not be displayed<br />
+<div class="admin-form-holder"><?php echo $this->form; ?></div>
+
+<link href="/static/elrte/css/elrte.min.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" /> 
+<script src="/static/elrte/js/elrte.min.js" type="text/javascript"></script>
+<script src="/static/elrte/js/i18n/elrte.en.js" type="text/javascript" charset="utf-8"></script> 
+
+<link href="/static/elfinder/css/elfinder.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" />
+<script src="/static/elfinder/js/elfinder.full.js" type="text/javascript" charset="utf-8"></script>
+<script src="/static/js/el-finder-product-images.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" charset="utf-8"> 
+$().ready(function() {
+	var opts = {
+		lang			: 'en',
+		cssClass		: 'el-rte',
+		height			: 300,
+		width			: 800,
+		toolbar		 	: 'maxi',
+		absoluteURLs	: false,
+		fmOpen 			: function(callback) {
+				$('<div id="myelfinder" />').elfinder({
+		    	url : '/admin/el-finder/product-images',
+				dialog : { width : 900, modal : true, title : 'Files' }, // open in dialog window
+				closeOnEditorCallback : true, // close after file select
+				editorCallback : callback     // pass callback to file manager
+			});
+		}
+	};
+	$('.bs-admin-form-base').find('#content').elrte(opts);
+	
+	$( "#start" ).datepicker({ dateFormat: 'yy-mm-dd' });
+	$( "#end" ).datepicker({ dateFormat: 'yy-mm-dd' });
+});
+</script>

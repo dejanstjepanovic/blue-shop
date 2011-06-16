@@ -1,0 +1,18 @@
+<div id="slide-5" class="slide-wrapper">
+	<div class="slide-container">
+		<?php foreach ($this->slides AS $s): ?>
+		<div class="slide-desc">
+			<?php echo $s['content']; ?>
+		</div><!-- .slide-desc -->
+		<?php endforeach; ?>
+	</div><!-- .slide-container -->
+</div><!-- #slide-5 -->
+<script>
+//<![CDATA[
+	$("#slide-5").mbSlider({
+		animPause	: <?php echo $this->slides[0]['animPause']; ?>,
+		animDur		: <?php echo $this->slides[0]['animDur']; ?>,
+		animTypeD	: "<?php echo $this->slides[0]['animTypeD']; ?>"
+	});
+//]]>
+</script>
